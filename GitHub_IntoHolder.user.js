@@ -1,14 +1,14 @@
 // ==UserScript==
-// @name        GitHub Old_Version 🔵
+// @name        GitHub IntoHolder 🔵
 // @namespace        http://tampermonkey.net/
 // @version        0.1
-// @description        Old_Versionフォルダーに整理処理を補助する　「Shift+右Click」
+// @description        ファイルのフォルダー整理を補助する　「Shift+右Click」
 // @author        personwritep
 // @match        https://github.com/*
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=github.com
 // @grant        none
-// @updateURL        https://github.com/personwritep/GitHub_Old_Version/raw/main/GitHub_Old_Version.user.js
-// @downloadURL        https://github.com/personwritep/GitHub_Old_Version/raw/main/GitHub_Old_Version.user.js
+// @updateURL        https://github.com/personwritep/GitHub_IntoHolder/raw/main/GitHub_IntoHolder.user.js
+// @downloadURL        https://github.com/personwritep/GitHub_IntoHolder/raw/main/GitHub_IntoHolder.user.js
 // ==/UserScript==
 
 let set_ver; // セッション中のフォルダー番号
