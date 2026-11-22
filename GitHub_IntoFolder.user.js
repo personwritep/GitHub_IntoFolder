@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        GitHub IntoHolder 🔵
+// @name        GitHub IntoFolder 🔵
 // @namespace        http://tampermonkey.net/
 // @version        0.1
 // @description        ファイルのフォルダー整理を補助する　「Shift+右Click」
@@ -7,8 +7,8 @@
 // @match        https://github.com/*
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=github.com
 // @grant        none
-// @updateURL        https://github.com/personwritep/GitHub_IntoHolder/raw/main/GitHub_IntoHolder.user.js
-// @downloadURL        https://github.com/personwritep/GitHub_IntoHolder/raw/main/GitHub_IntoHolder.user.js
+// @updateURL        https://github.com/personwritep/GitHub_IntoFolder/raw/main/GitHub_IntoFolder.user.js
+// @downloadURL        https://github.com/personwritep/GitHub_IntoFolder/raw/main/GitHub_IntoFolder.user.js
 // ==/UserScript==
 
 let set_ver; // セッション中のフォルダー番号
