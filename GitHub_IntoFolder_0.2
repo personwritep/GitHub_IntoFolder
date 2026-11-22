@@ -29,7 +29,7 @@ function main(){
     if(isRepoRoot()){
         set_folder();
         to_edit(); }
-    else if(isEdit() || isnewEditor()){
+    else if(isEditor() || isnewEditor()){
         set_folder();
         let q=window.location.search;
         if(q.includes('GIH') && !q.includes('search')){ // クエリ文字列「GIH」で起動
@@ -40,15 +40,15 @@ function main(){
         rem_panel(); }
 
 
-    function isRepoRoot(){ // リポジトリのルート画面の判定
+    function isRepoRoot(){ // リポジトリのルート画面
         let pathParts=window.location.pathname.split('/').filter(Boolean);
         return pathParts.length===2 || (pathParts.length>=4 && pathParts[2]==='tree'); }
 
-    function isEdit(){ // 既存ファイルの編集画面の判定
+    function isEditor(){ // 既存ファイルの編集画面
         let pathParts=window.location.pathname.split('/').filter(Boolean);
         return pathParts.length>= 4 && pathParts[2]==='edit'; }
 
-    function isnewEditor(){ // 新規ファイルの作成画面の判定
+    function isnewEditor(){ // 新規ファイルの作成画面
         let pathParts=window.location.pathname.split('/').filter(Boolean);
         return pathParts.length>=3 && pathParts[2]==='new'; }
 
