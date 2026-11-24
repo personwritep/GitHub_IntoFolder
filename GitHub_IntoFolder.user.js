@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        GitHub IntoFolder 🔵
 // @namespace        http://tampermonkey.net/
-// @version        0.2
+// @version        0.3
 // @description        ファイルのフォルダー整理を補助する　「Shift+右Click」
 // @author        personwritep
 // @match        https://github.com/*
@@ -32,7 +32,7 @@ function main(){
     else if(isEditor() || isnewEditor()){
         set_folder();
         let q=window.location.search;
-        if(q.includes('GIH') && !q.includes('search')){ // クエリ文字列「GIH」で起動
+        if(q.includes('GIH')){ // クエリ文字列「GIH」で起動
             setTimeout(()=>{
                 input_filename();
             }, 800); }}
